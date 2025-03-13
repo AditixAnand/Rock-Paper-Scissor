@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+h1 {
+  background-color: #081b31;
+  font-size: 20px;
+  color: #fff;
+  height: 5rem;
+  line-height: 5rem;
+  width: 100%;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 5rem;
+  flex-wrap: wrap;
+}
+
+.choice {
+  height: 165px;
+  width: 165px;
+  border-radius: 50%;
+  background-color: rgb(87, 125, 113);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.choice:hover {
+  cursor: pointer;
+  background-color: #081b31;
+}
+
+img {
+  height: 90px;
+  width: 90px;
+  object-fit: cover;
+  border-radius: 30%;
+}
+
+.score-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-top: 3rem;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+#user-score,
+#comp-score {
+  font-size: 40px;
+}
+
+.msg-container {
+  margin-top: 5rem;
+}
+
+#msg {
+  background-color: #081b31;
+  color: #fff;
+  font-size: 20px;
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: auto;
+}
+
+#reset-btn {
+  margin-top: 40px;
+  font-size: 20px;
+  padding: 10px;
+  background-color: #98d1d7;
+  color: #121212;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#reset-btn:hover {
+  background-color: #74b5c0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .choices {
+    gap: 1.5rem;
+  }
+
+  .choice {
+    height: 120px;
+    width: 120px;
+  }
+
+  img {
+    height: 70px;
+    width: 70px;
+  }
+
+  .score-board {
+    gap: 2rem;
+    font-size: 18px;
+  }
+
+  #user-score,
+  #comp-score {
+    font-size: 30px;
+  }
+
+  #msg {
+    font-size: 18px;
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 18px;
+    height: 4rem;
+    line-height: 4rem;
+  }
+
+  .choices {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .choice {
+    height: 100px;
+    width: 100px;
+  }
+
+  img {
+    height: 60px;
+    width: 60px;
+  }
+
+  .score-board {
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 16px;
+  }
+
+  #user-score,
+  #comp-score {
+    font-size: 25px;
+  }
+
+  .msg-container {
+    margin-top: 3rem;
+  }
+
+  #msg {
+    font-size: 16px;
+    padding: 0.6rem;
+  }
+
+  #reset-btn {
+    font-size: 18px;
+    padding: 8px;
+  }
+}
